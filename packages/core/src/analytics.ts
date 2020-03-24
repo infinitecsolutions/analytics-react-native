@@ -46,6 +46,11 @@ export module Analytics {
 		flushAt?: number
 
 		/**
+		 * The proxy host url. Set if the requests should point to custom (proxy) url.
+		 */
+		proxyUrl?: string
+
+		/**
 		 * iOS specific settings.
 		 */
 		ios?: {

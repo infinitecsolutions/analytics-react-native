@@ -8,6 +8,8 @@ export interface Configuration {
 	debug: boolean
 	flushAt: number
 	json: string
+	proxyUrl: string
+	proxyEnabled: boolean
 
 	android: {
 		flushInterval?: number

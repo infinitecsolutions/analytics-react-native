@@ -44,14 +44,29 @@ RCT_EXPORT_METHOD(
     if(singletonJsonConfig != nil) {
         if([json isEqualToString:singletonJsonConfig]) {
             return resolver(nil);
-        }
-        else {
+        } else {
             return rejecter(@"E_SEGMENT_RECONFIGURED", @"Duplicate Analytics client", nil);
         }
     }
 
     SEGAnalyticsConfiguration* config = [SEGAnalyticsConfiguration configurationWithWriteKey:options[@"writeKey"]];
     
+    if ([options[@"proxyEnabled"] boolValue]) {
+        NSString* proxyUrl = options[@"proxyUrl"];
+
+        config.requestFactory = ^(NSURL *url) {
+            NSURLComponents *components = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
+            NSURLComponents *proxyComponents = [NSURLComponents componentsWithString:proxyUrl];
+            components.host = proxyComponents.host;
+            components.scheme = proxyComponents.scheme;
+            components.port = proxyComponents.port;
+            components.path = [proxyComponents.path stringByAppendingPathComponent:components.path];
+
+            NSURL *transformedURL = components.URL;
+            return [NSMutableURLRequest requestWithURL:transformedURL];
+        };
+    }
+
     config.recordScreenViews = [options[@"recordScreenViews"] boolValue];
     config.trackApplicationLifecycleEvents = [options[@"trackAppLifecycleEvents"] boolValue];
     config.trackAttributionData = [options[@"trackAttributionData"] boolValue];

@@ -39,7 +39,7 @@
 
 **● ready**: *`false`* = false
 
-*Defined in analytics.ts:96*
+*Defined in [analytics.ts:101](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L101)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 ▸ **alias**(newId: *`string`*, options?: *[Options]()*): `Promise`<`void`>
 
-*Defined in analytics.ts:266*
+*Defined in [analytics.ts:271](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L271)*
 
 **Parameters:**
 
@@ -69,7 +69,7 @@ ___
 
 ▸ **catch**(handler: *[ErrorHandler]()*): `this`
 
-*Defined in analytics.ts:111*
+*Defined in [analytics.ts:116](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L116)*
 
 **Parameters:**
 
@@ -86,7 +86,7 @@ ___
 
 ▸ **disable**(): `Promise`<`void`>
 
-*Defined in analytics.ts:305*
+*Defined in [analytics.ts:310](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L310)*
 
 **Returns:** `Promise`<`void`>
 
@@ -97,7 +97,7 @@ ___
 
 ▸ **enable**(): `Promise`<`void`>
 
-*Defined in analytics.ts:295*
+*Defined in [analytics.ts:300](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L300)*
 
 **Returns:** `Promise`<`void`>
 
@@ -108,7 +108,7 @@ ___
 
 ▸ **flush**(): `Promise`<`void`>
 
-*Defined in analytics.ts:286*
+*Defined in [analytics.ts:291](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L291)*
 
 **Returns:** `Promise`<`void`>
 
@@ -119,7 +119,7 @@ ___
 
 ▸ **getAnonymousId**(): `Promise`<`string`>
 
-*Defined in analytics.ts:310*
+*Defined in [analytics.ts:315](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L315)*
 
 **Returns:** `Promise`<`string`>
 
@@ -130,7 +130,7 @@ ___
 
 ▸ **group**(groupId: *`string`*, traits?: *[JsonMap]()*, options?: *[Options]()*): `Promise`<`void`>
 
-*Defined in analytics.ts:253*
+*Defined in [analytics.ts:258](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L258)*
 
 **Parameters:**
 
@@ -149,7 +149,7 @@ ___
 
 ▸ **identify**(user: *`string`*, traits?: *[JsonMap]()*, options?: *[Options]()*): `Promise`<`void`>
 
-*Defined in analytics.ts:240*
+*Defined in [analytics.ts:245](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L245)*
 
 **Parameters:**
 
@@ -168,7 +168,7 @@ ___
 
 ▸ **middleware**(middleware: *[Middleware]()*): `this`
 
-*Defined in analytics.ts:149*
+*Defined in [analytics.ts:154](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L154)*
 
 **Parameters:**
 
@@ -185,7 +185,7 @@ ___
 
 ▸ **reset**(): `Promise`<`void`>
 
-*Defined in analytics.ts:276*
+*Defined in [analytics.ts:281](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L281)*
 
 **Returns:** `Promise`<`void`>
 
@@ -196,7 +196,7 @@ ___
 
 ▸ **screen**(name: *`string`*, properties?: *[JsonMap]()*, options?: *[Options]()*): `Promise`<`void`>
 
-*Defined in analytics.ts:225*
+*Defined in [analytics.ts:230](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L230)*
 
 **Parameters:**
 
@@ -215,7 +215,7 @@ ___
 
 ▸ **setup**(writeKey: *`string`*, configuration?: *[Configuration](../interfaces/analytics.configuration.md)*): `Promise`<`void`>
 
-*Defined in analytics.ts:188*
+*Defined in [analytics.ts:193](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L193)*
 
 **Parameters:**
 
@@ -233,7 +233,7 @@ ___
 
 ▸ **track**(event: *`string`*, properties?: *[JsonMap]()*, options?: *[Options]()*): `Promise`<`void`>
 
-*Defined in analytics.ts:207*
+*Defined in [analytics.ts:212](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L212)*
 
 **Parameters:**
 
@@ -252,7 +252,7 @@ ___
 
 ▸ **useNativeConfiguration**(): `this`
 
-*Defined in analytics.ts:161*
+*Defined in [analytics.ts:166](https://github.com/fr33z3/analytics-react-native/blob/master/packages/core/src/analytics.ts#L166)*
 
 **Returns:** `this`
 
